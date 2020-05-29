@@ -51,7 +51,7 @@ img {
 }
 
 .alert {
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   left: 50%;
   margin: 0 auto;
