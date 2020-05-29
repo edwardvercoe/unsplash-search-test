@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #1F1C18;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchContainer {
+  min-width: 250px;
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 0 15px;
+  display:flex;
+  justify-content: space-between;
+
+}
+.MuiInputBase-input {
+  min-width: 290px !important;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 20px;  
+}
+
+.resultsContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100vw;
+  height: auto;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.gallery {
+  height: auto;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.alert {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin: 0 auto;
+  animation: slide-in-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translate(-50%, 50px);
+            transform: translate(-50%, 50px);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50px);
+            transform: translate(-50%, 50px);
+    opacity: 0;
   }
 }
