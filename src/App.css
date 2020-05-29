@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  background-color: #1F1C18;
+  background: #c9d6ff;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
   overflow-x: hidden;
 }
 
@@ -22,9 +23,8 @@ body {
   max-width: 350px;
   margin: 40px auto;
   padding: 0 15px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-
 }
 .MuiInputBase-input {
   min-width: 290px !important;
@@ -34,7 +34,7 @@ img {
   height: 100%;
   width: 100%;
   object-fit: contain;
-  padding: 20px;  
+  padding: 20px;
 }
 
 .resultsContainer {
@@ -55,28 +55,28 @@ img {
   bottom: 50px;
   left: 50%;
   margin: 0 auto;
-  animation: slide-in-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bottom 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-bottom {
   0% {
     -webkit-transform: translate(-50%, 50px);
-            transform: translate(-50%, 50px);
+    transform: translate(-50%, 50px);
     opacity: 0;
   }
   10% {
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     opacity: 1;
   }
   80% {
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     opacity: 1;
   }
   100% {
     -webkit-transform: translate(-50%, 50px);
-            transform: translate(-50%, 50px);
+    transform: translate(-50%, 50px);
     opacity: 0;
   }
 }
